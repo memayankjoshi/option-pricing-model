@@ -1,36 +1,21 @@
-# **Black-Scholes Option Pricing Model in Python** 📈  
+# Coffee Futures Pricing
 
-This project implements the **Black-Scholes option pricing model** to calculate the fair price of European call and put options.  
+- **Overview**: A beginner-friendly Python project to learn financial modeling by pricing coffee futures and options using Cost of Carry, Black-Scholes, and Monte Carlo simulations.
 
-✅ **Quick to implement (~1 hour)**  
-✅ **Great for resume & interviews**  
-✅ **Demonstrates Python & Quantitative Finance skills**  
+- **Components**:
+  - **P1**: Futures price via Cost of Carry.
+  - **P2**: Call option price with Black-Scholes.
+  - **P3**: Price forecasting with Monte Carlo.
+ 
+- **Requirements**: Python 3.x, NumPy, SciPy, Matplotlib, Jupyter (\`pip install numpy scipy matplotlib jupyter\`).
 
----
+- **Usage**: Run \`Project.ipynb\` in Jupyter; adjust parameters (spot price, volatility, etc.).
 
-## **📌 Project Overview**  
-The **Black-Scholes model** is a widely used mathematical model for pricing European options. It calculates the theoretical price of an option based on:  
-- Current stock price ($S$)  
-- Strike price ($K$)  
-- Time to expiration ($T$)  
-- Risk-free interest rate ($r$)  
-- Volatility ($\sigma$)  
+- **Example Outputs**:
+  - Futures: \$1.218/pound.
+  - Call option: \$0.068.
+  - Simulated price: \$1.210.
+ 
+- **Goals**: Learn futures/option pricing and Python-based simulations.
 
-The model uses the following formula:  
-\[
-C = S N(d_1) - K e^{-rT} N(d_2)
-\]
-\[
-P = K e^{-rT} N(-d_2) - S N(-d_1)
-\]
-where  
-\[
-d_1 = \frac{\ln(S/K) + (r + 0.5 \sigma^2) T}{\sigma \sqrt{T}}
-\]
-\[
-d_2 = d_1 - \sigma \sqrt{T}
-\]
-
----
-
-## **📂 Project Structure**
+- **Limitations**: Constant parameters & basic model.
